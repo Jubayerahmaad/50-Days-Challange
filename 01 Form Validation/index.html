@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="form" class="form" action="">
+            <h2>Regiter Now</h2>
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input id="username" type="text" placeholder="Enter Username">
+                <small>error massage</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Enter Your Email">
+                <small>error massage</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Enter Password">
+                <small>error massage</small>
+            </div>
+            <div class="form-control">
+                <label for="confim-password">Confirm Password</label>
+                <input id="confim-password" type="password" placeholder="Enter Confirm Password">
+                <small>error massage</small>
+            </div>
+            <button id="sumbit" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
