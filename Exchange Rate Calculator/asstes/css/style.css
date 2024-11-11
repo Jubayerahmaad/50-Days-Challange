@@ -14,10 +14,14 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin: 0;
+    margin: 0 auto;
     padding: 20px;
   }
-  
+  .max-content{
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 5px;
+  }
   h1 {
     color: var(--primary-color);
   }
@@ -36,7 +40,8 @@
   }
   
   .money-img {
-    width: 350px;
+    width: 250px;
+    margin: 0 auto;
   }
   
   .currency {
