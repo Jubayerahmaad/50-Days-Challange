@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+.cart-icon{
+    width: 30px;
+    position: relative;
+}
+.cart-icon span{
+    position: absolute;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    top: 50%;
+    right: -20px;
+    border-radius: 50%;
+}
+.title{
+    font-size: xx-large;
+}
+.cart-tap{
+    width: 400px;
+    max-width: 100%;
+    background-color:#353432;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+}
+.cart-tap h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.cart-tap .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cart-tap button{
+    background-color: #E8BC0E;
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cart-tap .closebtn{
+    background-color: #eee;
+}
+.list-cart{
+    overflow: auto;
+}
+.list-cart::-webkit-scrollbar{
+    width: 0;
+}
+/*  */
+.cart-tap{
+    right: -400px;
+    transition: 0.5s;
+}
+body.activeTapCart .cart-tap{
+    right: 0;
+}
+body.activeTabCart .container{
+    transform: translateX(-250px);
+}
