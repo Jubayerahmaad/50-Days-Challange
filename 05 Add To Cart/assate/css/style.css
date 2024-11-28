@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .container{
-    width: 1140px;
+    width: 1040px;
     margin: 0 auto;
 }
 a{
@@ -63,7 +63,7 @@ header{
 .cart-tap button{
     background-color: #E8BC0E;
     border: none;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     cursor: pointer;
 }
@@ -76,7 +76,7 @@ header{
 .list-cart::-webkit-scrollbar{
     width: 0;
 }
-/*  */
+/* active cart css */
 .cart-tap{
     right: -400px;
     transition: 0.5s;
@@ -87,3 +87,4 @@ body.activeTapCart .cart-tap{
 body.activeTabCart .container{
     transform: translateX(-250px);
 }
+/*  */
